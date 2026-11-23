@@ -1,0 +1,7 @@
+make-the-judge-smile checks v2 (after revision: trim guard added)
+node24 exit 0, node22.21.1 exit 0, outputs byte-identical
+entry.txt: 131 bytes, 129 chars, no newline, gate 1-200 PASS
+grader sim (read-only entry dir, user nobody, no network via unshare -n, cwd /, Node 22.21.1): exit 0, output byte-identical
+determinism: node24 / node22 / grader-sim runs byte-identical
+negative test (trailing space in LINE): exit 1, no entry.txt - validation works
+line: "This morning the laundry lady returned my shirt with a boiled egg tucked in the pocket and a note: 'Eat — you look hungry today.'"
